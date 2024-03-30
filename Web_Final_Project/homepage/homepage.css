@@ -400,6 +400,12 @@ footer .footer-bottom-right ul{
     }
 } 
 @media (max-width: 500px) {
+    header .header-bottom-center{
+        display: none;
+    }
+    header .header-bottom-right input{
+        display: none;
+    }
     main .card{
         width: 150px;
         height: 200px;
