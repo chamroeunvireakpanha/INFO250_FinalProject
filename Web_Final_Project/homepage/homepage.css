@@ -78,6 +78,12 @@ header .header-bottom-left img{
     height: 65px;
     margin-right: 8px;
 }
+header .header-bottom-left-first img{
+    display: none;
+}
+header .header-bottom-left-first img{
+    height: 15px;
+}
 header .header-bottom-center a{
     font-weight: bold;
     margin: 0 10px;
@@ -329,6 +335,9 @@ footer .footer-bottom-right ul{
         height: 40px;
         margin-right: 4px;
     }
+    header .header-bottom-left-first img{
+        display: inline;
+    }
     header .header-bottom-center{
         display: none;
     }
@@ -390,3 +399,18 @@ footer .footer-bottom-right ul{
         margin: 10px 0;
     }
 } 
+@media (max-width: 500px) {
+    main .card{
+        width: 150px;
+        height: 200px;
+    }
+    main .card img{
+        width: 100%;
+        height: 150px;
+    }
+    main .image-tag img{
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+}
