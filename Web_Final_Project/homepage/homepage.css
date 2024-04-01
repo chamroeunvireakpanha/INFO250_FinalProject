@@ -65,8 +65,8 @@ header .header-bottom-container{
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 25px;
+    justify-content:space-between;
+    padding: 0 10px;
     background-color: rgb(227, 225, 225);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -76,13 +76,16 @@ header .header-bottom-left{
 }
 header .header-bottom-left img{
     height: 65px;
-    margin-right: 8px;
+    margin-right: 0px;
 }
-header .header-bottom-left-first img{
-    display: none;
+header .header-bottom-left-first{
+    display: none ;
 }
 header .header-bottom-left-first img{
     height: 15px;
+}
+header .header-bottom-left-first a{
+    cursor: pointer;
 }
 header .header-bottom-center a{
     font-weight: bold;
@@ -91,6 +94,8 @@ header .header-bottom-center a{
 header .header-bottom-right{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    font-size: 1em;
 }
 header .header-bottom-right input{
     padding: 8px 20px;
@@ -108,12 +113,26 @@ header .header-bottom-right input{
 header .header-bottom-right input:focus{
     background-color:white;
 }
+header .header-bottom-right  .icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 header .header-bottom-right img{
     height: 20px;
+    margin: 0 5px;
 }
 header .header-bottom-right #heart-image{
-    margin: 0 10px;
+    margin: 0 5px 0 10px;
 }
+header .header-bottom-right #search img{
+    height: 17px;
+}
+header .header-bottom-right #search{
+    cursor: pointer;
+    display: none;
+}
+
 main .main-info-container{
     display: flex;
     align-items: center;
@@ -140,7 +159,7 @@ main .main-info-container .info a:active{
     color: rgb(227, 225, 225);
 }
 main .main-new-arrival-container, .main-trending-container{
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
 }
 main .new-arrival-header, .trending-header {
@@ -159,15 +178,12 @@ main .new-arrival-header img, .trending-header img{
 main .new-arrival-data, .trending-data{
     display: flex;
     align-items: center;
-    justify-content:center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    overflow: auto;
 }
 main .card{
-    width: 250px;
-    height: 300px;
-    margin: 10px auto;
+    min-width: 250px;
+    min-height: 300px;
+    margin: 10px 1%;
     background-color: rgb(227, 225, 225);
     box-shadow: 0 0 2px;
 }
@@ -335,8 +351,8 @@ footer .footer-bottom-right ul{
         height: 40px;
         margin-right: 4px;
     }
-    header .header-bottom-left-first img{
-        display: inline;
+    header .header-bottom-left-first {
+        display: block;
     }
     header .header-bottom-center{
         display: none;
@@ -346,6 +362,9 @@ footer .footer-bottom-right ul{
         width: 100px;
         background-size: 15px;
     }
+    header .header-bottom-right p{
+        font-size: 0.8em;
+    }
     header .header-bottom-right img{
         height: 15px;
     }
@@ -353,8 +372,8 @@ footer .footer-bottom-right ul{
         margin: 0 5px;
     }
     main .card{
-        width: 200px;
-        height: 250px;
+        min-width: 200px;
+        min-height: 250px;
     }
     main .card img{
         width: 100%;
@@ -406,9 +425,12 @@ footer .footer-bottom-right ul{
     header .header-bottom-right input{
         display: none;
     }
+    header .header-bottom-right #search{
+        display: inline-block;;
+    }
     main .card{
-        width: 150px;
-        height: 200px;
+        min-width: 150px;
+        min-height: 200px;
     }
     main .card img{
         width: 100%;
@@ -419,4 +441,12 @@ footer .footer-bottom-right ul{
         width: 20px;
         margin-right: 5px;
     }
+}
+@media (max-width: 350px) {
+    header .header-bottom-left img{
+        height: 35px;
+    }
+    header .header-top-right{
+        font-size: 0.7em;
+    } 
 }
