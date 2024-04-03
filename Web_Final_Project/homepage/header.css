@@ -105,6 +105,7 @@ header .header-bottom-right #search{
     cursor: pointer;
     display: none;
 }
+/* Configure dropdown content in .header-bottom-center */
 header .header-bottom-center .dropdown-contain {
     display: flex;
     justify-content:space-evenly;
@@ -130,3 +131,38 @@ header #new-dropdown-contain a{
     margin: 10px 30px 20px 30px;
     font-weight: 500;
 }
+
+/* Config sidebar navigations for small screen size 
+in .header-bottom-left-first */
+header .side-bar{
+    display: none;
+    position: absolute; 
+    top: 60px;
+    left: 0;
+    padding: 20px 20px 100px 20px;
+    width: 40%;
+    min-width: 200px;
+    height: 100vh;
+    background-color:rgb(227, 225, 225) ;
+    overflow: auto;
+    opacity: 0.95;
+}
+header .side-bar-container ul{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-weight: bold;
+}
+header .side-bar-container ul li{
+    padding: 10px 0;
+}
+header .header-bottom-left-first:hover .side-bar{
+    display: block;
+}
+header .header-bottom-left-first .dropdown-contain{
+    display: none;
+}
+header .header-bottom-left-first .dropdown:hover .dropdown-contain{
+    display: block;
+}
+/* ========================================================= */
