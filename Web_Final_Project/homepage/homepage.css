@@ -73,6 +73,7 @@ header .header-bottom-container{
 header .header-bottom-left{
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 header .header-bottom-left img{
     height: 65px;
@@ -90,6 +91,7 @@ header .header-bottom-left-first a{
 header .header-bottom-center a{
     font-weight: bold;
     margin: 0 10px;
+    z-index: 2;
 }
 header .header-bottom-right{
     display: flex;
@@ -132,7 +134,31 @@ header .header-bottom-right #search{
     cursor: pointer;
     display: none;
 }
-
+header .header-bottom-center .dropdown-contain {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 40px 25% 0px 10%;
+    background-color: rgb(227, 225, 225);
+    min-width: 100%;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px 5px rgba(0,0,0,0.2);
+    z-index: 0;
+    display: none;
+}
+header .header-bottom-center .dropdown:hover .dropdown-contain {
+    display: flex;
+}
+header #new-dropdown-contain{
+    border-left: 1px solid gray;
+    height: fit-content;
+}
+header #new-dropdown-contain a{
+    display: block;
+    margin: 10px 30px 20px 30px;
+    font-weight: 500;
+}
 main .main-info-container{
     display: flex;
     align-items: center;
