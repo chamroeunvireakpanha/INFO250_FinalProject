@@ -42,6 +42,9 @@ main .new-arrival-header img, .trending-header img{
     height: 25px;
     margin-right: 5px;
 }
+main a{
+    cursor: pointer;
+}
 main .new-arrival-data, .trending-data{
     display: flex;
     align-items: center;
