@@ -352,7 +352,14 @@
     </header>
     <main>
         <div class="main-tamnail-container">
-            <img src="image/tamnail.png" alt="tamnail-image" width="100%">
+            <picture>
+                <source srcset="image/tamnail2.png"  alt="tamnail-image" width="100%" media="(max-width: 500px)">
+                <source srcset="image/tamnail3.png"  alt="tamnail-image" width="100%" media="(max-width: 900px)">
+                <img src="image/tamnail.png" alt="tamnail-image" width="100%">
+            </picture>
+            <div class="shop">
+                <a href="">Shop</a>
+            </div>
         </div>
         <div class="main-info-container">
             <div class="info">

@@ -68,6 +68,14 @@ body{
     header .header-bottom-right #heart-image{
         margin: 0 5px;
     }
+    main .main-tamnail-container .shop{
+        top: 30%;
+        left: 40%;
+    }
+    main .main-tamnail-container .shop a{
+        padding: 20px 60px;
+        border-radius: 30px;
+    }
     main .card{
         min-width: 300px;
         min-height: 400px;
@@ -125,6 +133,14 @@ body{
     header .header-bottom-right #search{
         display: inline-block;;
     }
+    main .main-tamnail-container .shop{
+        top: 37%;
+        left: 48%;
+    }
+    main .main-tamnail-container .shop a{
+        padding: 15px 30px;
+        border-radius: 30px;
+    }
     main .card{
         min-width: 250px;
         min-height: 330px;
@@ -149,4 +165,5 @@ body{
     header .header-bottom-left h2{
         font-size: 0.9em;
     } 
+    
 }

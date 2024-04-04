@@ -1,5 +1,19 @@
-
-
+main .main-tamnail-container{
+    position: relative;
+}
+main .main-tamnail-container .shop{
+    position: absolute;
+    top: 60%;
+    left: 27%;
+}
+main .main-tamnail-container .shop a{
+    background-color: #040202;
+    color:#fff;
+    display: block;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+}
 main .main-info-container{
     display: flex;
     align-items: center;
@@ -115,7 +129,6 @@ main .card-content p{
     opacity: 0.6;
     font-size: 0.7em;
 }
-
 
 
 
