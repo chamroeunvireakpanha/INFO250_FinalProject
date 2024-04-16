@@ -64,12 +64,6 @@ header .header-bottom-center a{
     margin: 0 10px;
     z-index: 2;
 }
-header .header-bottom-center a:hover{
-    font-size: 1.2em;
-    transition: 0.3s;
-    text-decoration: underline;
-    padding: 0 20px;
-}
 header .header-bottom-right{
     display: flex;
     align-items: center;
@@ -120,8 +114,7 @@ header .header-bottom-center .dropdown-contain {
     min-width: 100%;
     height: 350px;
     position: absolute;
-    left: 0px;
-
+    left: 0;
     box-shadow: 0px 8px 16px 0px 5px rgba(0,0,0,0.2);
     z-index: 0;
     display: none;
@@ -138,16 +131,7 @@ header #new-dropdown-contain a{
     margin: 10px 30px 20px 30px;
     font-weight: 500;
 }
-header #new-dropdown-contain a:hover{
-    opacity: 0.9;
-    text-decoration: underline;
-    transition: 0.2s;
-    padding: 10px 0;
-    font-size: 1.1em;
-}
-header #new-dropdown-contain a:active{
-    opacity: 0.5;
-}
+
 /* Config sidebar navigations for small screen size 
 in .header-bottom-left-first */
 header .side-bar{
@@ -270,7 +254,7 @@ header .side-search:hover .dropdown{
     header .side-bar{
         top: 0;
         left: 0;
-        padding: 20px 20px 100px 10;
+        padding: 20px 20px 100px 10%;
         width: 100%;
         opacity: 0.95;
         z-index: 4;
