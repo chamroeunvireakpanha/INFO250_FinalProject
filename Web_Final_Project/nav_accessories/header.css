@@ -139,7 +139,7 @@ header #new-dropdown-contain a{
     font-weight: 500;
 }
 header #new-dropdown-contain a:hover{
-    opacity: 0.7;
+    opacity: 0.9;
     text-decoration: underline;
     transition: 0.2s;
     padding: 10px 0;
