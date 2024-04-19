@@ -82,6 +82,7 @@ main .card:hover{
     font-weight: bolder;
     background-color: #f4efef;
     color: black;
+    overflow: hidden;
     /* min-width: 320px;
     min-height: 370px; */
 }
