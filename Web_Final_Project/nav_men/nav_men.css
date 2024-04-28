@@ -120,6 +120,10 @@ main .card-price{
     font-size: 12px;
     padding: 5px;
 }
+main .card-price s{
+    color: red;
+    font-weight: bolder;
+}
 main .image-tag{
     display: flex;
     align-items: center;
